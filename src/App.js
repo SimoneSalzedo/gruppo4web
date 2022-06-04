@@ -5,18 +5,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+              <div className="pageTitleContainer">
+                  <h1 className="title">Welcome to Burgerbox!</h1>
+                  <p className="openParagraph">The first and only virtual fast-food in the world</p>
+          </div>
       </header>
     </div>
   );

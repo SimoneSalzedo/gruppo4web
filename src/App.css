@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+body {font-family: 'Ubuntu Mono', monospace;}
+
+.pageTitleContainer {
+    text-align: -webkit-center;
+    background-size: cover !important;
+    background: linear-gradient(30deg, #FFEE92 0%, #FF4040 100%);
+    min-height: 100vh;
+}
+.title{
+    text-align: inherit;
+    animation: entranceRight 1s cubic-bezier(0.85, 0, 0.15, 1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.openParagraph{
+    text-align: inherit;
+    animation: entraceLeft 1s cubic-bezier(0.85, 0, 0.15, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@keyframes entranceRight {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
+@keyframes entraceLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
